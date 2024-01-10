@@ -10,6 +10,6 @@ resource "aws_instance" "cicd_instance" {
   }
 }
 output "pub_ip" {
-  value = aws_instance.example_instance.public_ip
+  value = aws_instance.cicd_instance.public_ip
   
 }
